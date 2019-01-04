@@ -34,7 +34,6 @@ app.get('/campaign/add/', function (request, response) {
 //campaign add post
 app.post('/campaign/add-post', async function (request, response) {
   const campaign = request.body
-  console.log(request.body)
   if(_.isEmpty(campaign)){
   	response.send('Invalid campaign data : ' + JSON.stringify(campaign))
   }
